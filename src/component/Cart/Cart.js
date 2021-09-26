@@ -3,16 +3,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import "./Cart.css";
 const Cart = (props) => {
+  //destructurin
   const { cart } = props;
-  console.log(cart);
+  //total count
   let total = 0;
   for (const info of cart) {
     total = total + parseInt(info.salary);
   }
+  //Fontawesom
   const icon = <FontAwesomeIcon icon={faCheckCircle} size="lg" />;
   return (
     <div className="card shadow p-2 member-info">
-      <div class="card-body">
+      <div className="card-body">
         <h4 className="card-title text-center cart-member">
           Members Added:
           <span className="text-danger fs-2"> {props.cart.length}</span>

@@ -3,15 +3,17 @@ import Cart from "../Cart/Cart";
 import Members from "../Members/Members";
 import "./Main.css";
 const Main = () => {
+  //Declare Use state
   const [members, setMember] = useState([]);
 
-  //counting
+  //counting total add
   const [cart, setCart] = useState([]);
   //even handler:
   const handleAddBtn = (name) => {
     const newCart = [...cart, name];
     setCart(newCart);
   };
+  //Data load from MembersData
   useEffect(() => {
     fetch("/memberData.json")
       .then((res) => res.json())
@@ -25,7 +27,7 @@ const Main = () => {
           <div className="members">
             {members.map((member) => (
               <Members
-                key={member.key}
+                key={member.id}
                 handleAddBtn={handleAddBtn}
                 member={member}
               ></Members>

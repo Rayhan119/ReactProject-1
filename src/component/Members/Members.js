@@ -3,26 +3,28 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 import "./Members.css";
 const Members = (props) => {
+  //destracturing
   const { name, img, age, salary, skills, profession } = props.member;
+  //Fontawesom
   const icon = <FontAwesomeIcon icon={faPlusCircle} size="lg" />;
   return (
     <div className="card shadow p-3 cart">
-      <img src={img} class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h6 class="card-title">Name : {name}</h6>
+      <img src={img} className="card-img-top" alt="..." />
+      <div className="card-body">
+        <h6 className="card-title">Name : {name}</h6>
         <h6>Age : {age}</h6>
         <h6>Profession : {profession}</h6>
-        <h6 class="card-text">
-          Skills : <span class=" text-danger">{skills}</span>
+        <h6 className="card-text">
+          Skills : <span className=" text-danger">{skills}</span>
         </h6>
 
         <h4>Salary : {salary} </h4>
         <h5>Contact:</h5>
         <div className="contact">
-          <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-linkedin"></i>
-          <i class="fab fa-twitter-square"></i>
-          <i class="fas fa-envelope"></i>
+          <i className="fab fa-facebook-square"></i>
+          <i className="fab fa-linkedin"></i>
+          <i className="fab fa-twitter-square"></i>
+          <i className="fas fa-envelope"></i>
         </div>
         <div className="button">
           <button onClick={() => props.handleAddBtn(props.member)}>
