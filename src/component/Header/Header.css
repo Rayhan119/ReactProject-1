@@ -1,0 +1,31 @@
+/* .main-header {
+  text-align: center;
+  margin: 0;
+} */
+.header-area {
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: rgba(238, 238, 238, 0.425);
+}
+.header-area p {
+  font-size: 18px;
+  color: rgb(47, 45, 163);
+  padding: 10px 0;
+}
+.header-area h3 span {
+  color: maroon;
+}
+.header-area p span {
+  color: red;
+  font-size: 20px;
+}
+.budget {
+  padding: 7px 0;
+  border-radius: 10px;
+  color: rgb(226, 75, 75);
+}
+.budget:hover {
+  background-color: rgba(192, 194, 197, 0.746);
+}

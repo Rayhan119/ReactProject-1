@@ -1,0 +1,26 @@
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+  vertical-align: middle;
+}
+.card .button {
+  text-align: center;
+  margin: 35px 0;
+}
+.card .button button {
+  padding: 5px 25px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: auto;
+}
+.cart {
+  background-color: #edf1ff;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
+}
