@@ -11,16 +11,16 @@ const Cart = (props) => {
   }
   const icon = <FontAwesomeIcon icon={faCheckCircle} size="lg" />;
   return (
-    <div className="card shadow p-2 cart">
+    <div className="card shadow p-2 member-info">
       <div class="card-body">
-        <h4 class="card-title text-center text-success">
+        <h4 className="card-title text-center cart-member">
           Members Added:
           <span className="text-danger fs-2"> {props.cart.length}</span>
         </h4>
         <br />
         <h5>Total salary :{total}$ </h5>
         <br />
-        <h5 className="text-center">Members Name</h5>
+        <h5 className="text-center  cart-member">Members Name</h5>
         <ul>
           {cart.map((member) => (
             <li>{member.name}</li>

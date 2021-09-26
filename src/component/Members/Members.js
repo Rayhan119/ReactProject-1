@@ -17,6 +17,13 @@ const Members = (props) => {
         </h6>
 
         <h4>Salary : {salary} </h4>
+        <h5>Contact:</h5>
+        <div className="contact">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fas fa-envelope"></i>
+        </div>
         <div className="button">
           <button onClick={() => props.handleAddBtn(props.member)}>
             {icon} Add
